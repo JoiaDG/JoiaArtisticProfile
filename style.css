@@ -36,29 +36,38 @@ body{
 .yo{
     width: 100%;
     text-align: center;
+    position: relative;
     margin-top: 100px;
 }
 .yoTitle{
+    width: 100%;
+    position: relative;
     font-weight: 700;
-    font-size: 100px;
+    font-size: 80px;
 }
 .yoTexto p{
     margin-bottom: 20px;
 }
 .yoTexto{
-    margin-top: 100px;
+    display: inline-block;
     width: 60%;
+    margin-top: 100px;
     position: relative;
-    margin-left: 20%;
-    margin-right: 20%;
     font-size: 22px;
     font-weight: 300;
 }
+.containerInstax{
+    margin-left: 5%;
+    margin-right: 15%;
+    width: 80%;
+    position: relative;
+    display: flex;
+}
 .imagenes{
+    width: 60%;
     display: inline-block;
-    width: 200px;
-    margin-left: 70px;
-    height: 250px;
+    margin-left: 100px;
+    height: 80%;
     opacity: 60%;
     background-color: whitesmoke;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4); 
@@ -153,12 +162,13 @@ body{
 .launched{
     top:-20px;
     left: -20px;
+    width: 40%;
     position: relative;
+    display: inline;
 }
 .launched span{
     font-weight: 300;
     border:0;
-
     padding: 10px;
     border-radius: 10px;
     background-color: #9ab3f5;
@@ -223,8 +233,8 @@ body{
     display:block
 }
 .mySpotify p{
-    font-size: 30px;
-    font-weight: 300;
+    font-size: 80px;
+    font-weight: 700;
 }
 .footer{
     text-align: center;
@@ -237,4 +247,10 @@ body{
     background: #3f3f3f;
     display: inline-block;
     height  : 200px;
+}
+.socialIcons{
+    margin-bottom: 40px;
+}
+@media(max-width:600px){
+    
 }
