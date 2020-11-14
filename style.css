@@ -33,7 +33,62 @@ body{
     transform:translate(-50%,-50%);
     color: #c3c3c3;
 }
+.yo{
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+.yoTitle{
+    font-weight: 700;
+    font-size: 100px;
+}
+.yoTexto p{
+    margin-bottom: 20px;
+}
+.yoTexto{
+    margin-top: 100px;
+    width: 60%;
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 22px;
+    font-weight: 300;
+}
+.imagenes{
+    display: inline-block;
+    width: 200px;
+    margin-left: 70px;
+    height: 250px;
+    opacity: 60%;
+    background-color: whitesmoke;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4); 
+    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4);
+}
+.imagenes img{
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 20%;
+    width: 80%;
+    position: relative;
+
+}
+.imagenes:nth-child(odd){
+    z-index: 0;
+    transform:rotate(-10deg);
+    transition: 1s;
+}
+.imagenes:nth-child(even){
+    left: -60px;
+    transform:rotate(15deg);
+}
+.imagenes:hover{
+    transition: 1s;
+    transform:rotate(0);
+    opacity: 100%;
+}
 .nav{
+    z-index: 2;
     text-align: center;
     -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4); 
     box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.4);
@@ -154,13 +209,22 @@ body{
 .footer img:hover{
     filter: invert(60%);
 }
-#spotify{
-    border:0;
-    border-radius: 10px;
-    margin-top: 5%;
-    width: 500px;
-    height: 80px;
-    position: relative;
+.mySpotify{
+    border: 0;
+    border-radius: 15px;
+    margin-bottom: 100px;
+    margin-top:100px;
+    text-align: center;
+}
+.hidden{
+    display:none;
+}
+.shown{
+    display:block
+}
+.mySpotify p{
+    font-size: 30px;
+    font-weight: 300;
 }
 .footer{
     text-align: center;
