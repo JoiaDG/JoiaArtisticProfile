@@ -16,13 +16,14 @@
     <div class="nav">
             <ul class="navOptions">
                 <li><a href="#">Inicio</a></li>
+                <li><a href="#sobreMi">Sobre Mi</a></li>
                 <li><a href="#mimusica">Mi Musica</a></li>
                 <li><a href="#social">Social</a></li>
             </ul>
     </div>
 
     <div class="yo">
-        <h1 class="yoTitle">Quién soy yo</h1>
+        <h1 class="yoTitle" id="sobreMi">Quién soy yo</h1>
         <div class="imagenes" id="imagen1">
             <img src="imagenes/yo/doubt.JPG" alt="Foto de Joia con cara divertida">
         </div>
@@ -42,9 +43,9 @@
             <p>Sigo aprendiendo pero siento que ahora puedo dar un poco de música a este mundo, es por eso que hago esta página.</p>
         </div>
     </div>
-    <div class="mySpotify hidden">
+    <div class="mySpotify hidden" id="spotifyView">
         <p>Mi música</p>
-        <iframe src="https://open.spotify.com/embed/artist/6hR5ejrKnXzbFha0kM1hly" width="800" onload="spotifyshow()"height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe src="https://open.spotify.com/embed/artist/6hR5ejrKnXzbFha0kM1hly" width="800" onload="spotifyshow()" height="200" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
     </div>
     <div class="tarjetas" id="mimusica">
         <div class="tarjeton">
@@ -93,8 +94,8 @@
     </div>
     <script>
         function spotifyshow(){
-            document.getElementsByClassName("mySpotify").add.ClassName("shown")
-            document.getElementsByClassName("mySpotify").remove.ClassName("hidden")
+            document.getElementById("spotifyView").classList.add("shown");
+            document.getElementById("spotifyView").classList.remove("hidden");
         }
     </script>
 </body>
